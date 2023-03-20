@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area{
+            background-color: aqua;
+            color: brown;
+            font-family: arial;
+            font-size: 40px;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 20px;
+
+
+        }
+    </style>
+</head>
+<body>
+
+    <div id="area">
+
+        interaja...
+    </div>
+    <script>
+        var a = window.document.querySelector('div#area') // nao é um bom jeito declarar a variavel fora da função mas funciona
+        a.addEventListener('click', clicar) //liga o html com o javaScrip caso aconteça a ação descrita
+        a.addEventListener('mouseout', sair)
+        a.addEventListener('mouseenter', entrar)
+
+        function clicar (){ // caso aconteça a ação descrita essa função acontece 
+            a.innerHTML = "clicou"
+            a.style.background = "red"
+            a.style.color = "white"
+        }
+        function sair (){
+
+            a.innerHTML = "interaja..."
+            a.style.background = "aqua"
+        }
+        function entrar (){
+            a.innerHTML = "entrou"
+        }
+    </script>
+    <h1> somando valores </h1>
+    <input type="number" name="number1" id="number1">
+    <input type="number" name="number2" id="number2">
+    <input type="button" value="somar" id="submit" onclick="somar()"> <!-- liga o html ao JavaScript pelo html-->
+    <div id="res">
+        Resultado
+    </div>
+
+    <script>
+        submit.addEventListener('onclick',somar)
+        function somar (){
+
+            var text1 =window.document.querySelector('input#number1')
+            var text2 = window.document.querySelector('input#number2')
+            var res = window.document.querySelector('div#res')
+            var n1 = Number(text1.value)
+            var n2 = Number(text2.value)
+
+            var soma = n1 + n2;
+            res.innerHTML = `a soma de  ${n1} e ${n2} é igual a  ${soma} `
+
+
+
+        }
+    </script>
+    
+</body>
+</html>

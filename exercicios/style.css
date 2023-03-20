@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    color: white;
+}
+section{
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    border-radius: 30px;
+    width: 40em;
+    padding: 2em;
+}
+select#flist{
+    width: 150px;
+}body{
+    background-color: burlywood;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bem vindo</h1>
+    
+    <script src="./aula1.js">
+
+        //window.alert('minha primeira mensagem');  aparece um alerte com uma mensagem
+        //window.confirm('está gostando ?');  aparece uma mensagem de confirmação 
+        var nome = window.prompt('qual o seu nome'); // aparece um campo para preencher
+        document.write(`seja bem vindo ${nome}`)
+
+        // string + string concatenação 
+        // number + number soma
+        var n1 = Number (window.prompt('digite um numero ')); // o comando window.prompt recebe os dados uma variavel string 
+        var n2 = Number(window.prompt('digite o segundo numero')) //e por isso tem que ser convertida em number para ocorrer a soma
+        var soma = n1 + n2;
+        soma.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        window.alert(`a soma dos valore é ${soma} `) // pode se usar ${nome da variavel} para fazer concaternação e tem que ser feito com crase
+    </script>
+</body>
+</html>

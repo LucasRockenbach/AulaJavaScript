@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <h1>iniciando aula com DOM </h1>
+    <p>aqui vai o resultado </p>
+    <p>aprendendo a usar o <strong> DOM </strong> em JacaScript</p>
+    <div id="msg">
+        clique em mim 
+    </div>
+    <script>
+        // DOM É UTILIZADO PARA ACESSAR ELEMENTOS DO HTML USANDO JAVASCRIPT
+        var p1 = window.document.getElementsByTagName('p')[0] // coloquei o primeiro paragrafo dentro da varialvel p1
+                                                              // selecionando por TagName
+        window.document.write(p1.innerText) // imprimi na tela oque esta na variavel p1
+        p1.style.color = 'green'
+        //var m1 = window.document.getElementById('msg') SELECIONANDO UMA DIV INTEIRA 
+        var m1 = window.document.querySelector('div#msg')
+        window.document.write(msg.innerText)
+        m1.style.background = 'green'
+
+</script>
+</body>
+</html>
